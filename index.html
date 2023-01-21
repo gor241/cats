@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Cats</title>
+	<script src="js/cats.js"></script>
+	<script src="js/api.js"></script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div id="header" class="header lock-padding">
+			<div class="header__container">
+				<div class="header__logo">
+					<img src="images/icons/paw-solid.svg" alt="heand">
+					<p>Милые котики</p>
+				</div>
+				<a href="#popup" class="header__button popup-link">
+					<img src="images/icons/icon.svg" alt="plus">
+				</a>
+			</div>
+		</div>
+		<div class="main">
+			<section class="cats">
+				<div class="cats__container">
+					<div class="cats__cards">
+
+					</div>
+				</div>
+				<div class="cats__image _ibg">
+					<img src="images/icons/cato.jpg" alt="cover">
+				</div>
+			</section>
+		</div>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__text">©2022 Made by Name</div>
+				<div class="footer__social">
+					<a target="_blank" href="https://github.com"><img src="images/icons/6.png" alt="github"></a>
+					<a target="_blank" href="https://vk.com"><img src="images/icons/2.svg" alt="vk"></a>
+					<a target="_blank" href="https://telegram.org"><img src="images/icons/3.svg" alt="telegram"></a>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<div id="popup" class="popup">
+		<div class="popup__body">
+			<div class="popup__content">
+				<a href="##" class="popup__close close-popup"><img src="images/icons/x.svg" alt="x"></a>
+				<div class="popup__title">Добавить питомца</div>
+				<form action="" class="popup__form">
+					<div class="popup__column">
+						<div class="popup__image">
+						</div>
+						<input autocomplete="off" name="img_link" type="text" placeholder="Ссылка на фото"
+							class="popup__link">
+					</div>
+					<div class="popup__column">
+						<input autocomplete="off" type="number" name="id" min="1" required placeholder="id" class="popup__id">
+						<input autocomplete="off" type="text" name="name" required placeholder="Имя" class="popup__name">
+						<textarea autocomplete="off" placeholder="Описание" name="description" class="popup__area"></textarea>
+					</div>
+					<div class="popup__column">
+						<input autocomplete="off" type="number" name="age" placeholder="Возраст" class="popup__age">
+						<input autocomplete="off" type="number" min="0" max="10" name="rate" placeholder="Рейтинг (0-10)"
+							class="popup__raiting">
+						<div class="popup__checkbox">Любимчик<input type="checkbox" name="favourite" class="popup__pet">
+						</div>
+						<button class="popup__button" type="submit">Добавить котёнка</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
